@@ -324,7 +324,7 @@
             element.style.top = frame.y + "px";
             element.style.left = frame.x + "px";
             element.style.maxWidth = frame.width - 20 + "px";
-            element.style.fontSize = frame.height / 260 + "em";
+            element.style.fontSize = frame.height / 520 + "em";
             element.style.top = frame.y + frame.height - frame.bottomPadding - element.offsetHeight + "px";
             element.style.left = frame.x + (frame.width - element.offsetWidth) / 2 + "px";
             element.style.visibility = '';
