@@ -6,7 +6,7 @@
 </head>
 <body>
 <div id="fullscreen-container" style="width: 100%; height: 400px;">
-  <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/h--zcf8Fux4" frameborder="0" allowfullscreen="true"></iframe>
+  <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/fGPPfZIvtCw" frameborder="0" allowfullscreen="true"></iframe>
 </div>
 <script src="static/vendor/youtube.external.subtitle/youtube.external.subtitle.js"></script>
 <script src="static/vendor/subtitles-parser/subtitles.parser.js"></script>
@@ -35,9 +35,9 @@
     httpRequest.send(null);
   };
 
-  loadSRT('static/srt/idol_house.srt', function(subtitles) {
+  loadSRT('static/srt/kung_fu_panda_3_trailer.srt', function(subtitles) {
     var youtubeExternalSubtitle = new YoutubeExternalSubtitle.Subtitle(document.getElementById('video'), subtitles);
-
+  });
   document.getElementById('fullscreen-btn').addEventListener('click', function(e) {
     var elem = document.getElementById('fullscreen-container');
 
@@ -53,8 +53,8 @@
       }
     };
 
-    openFullscreen();	
-  });
+    openFullscreen();
+  });  
 </script>
 
 </body>
