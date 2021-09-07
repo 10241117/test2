@@ -16,4 +16,4 @@ hr.style-one {
 .thanx-title{text-align: left;font-size: 26.25px;color:#1e1e1e;line-height: 1.6;padding: 30px 0px 0px 0px;}
 .intro-content{text-align: left;font-size: 15px;color:#1e1e1e;line-height: 1.6;}
 .social-media{display:flex;flex-wrap:wrap;justify-content:center;padding: 30px;}
-.intro-logo{position: absolute;top: 450px;right: 250px;}
+.intro-logo{position: absolute; top: 25%; right: 50px; z-index: -1;}

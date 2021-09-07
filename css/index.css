@@ -26,7 +26,7 @@ img{
     font-weight:bold;
 }
 
-.custom-container {text-align: center; max-width: 1130px;}
+.custom-container {text-align: center; max-width: 1130px;  position: relative;}
 
 .select-btn>a {
     display: inline-block;
