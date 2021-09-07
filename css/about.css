@@ -1,0 +1,19 @@
+.intro-content a, .intro-content a:link, .intro-content a:visited {
+    color: #128dff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+hr.style-one {
+    border: 0;
+    height: 2px;
+    background-color: #1e1e1e;
+}
+
+.icon {width: 50px; margin: 15px;}
+
+.intro-title{text-align: left;font-size: 26.25px;color:#1e1e1e;line-height: 1.6;padding: 50px 0px 0px 0px;}
+.thanx-title{text-align: left;font-size: 26.25px;color:#1e1e1e;line-height: 1.6;padding: 30px 0px 0px 0px;}
+.intro-content{text-align: left;font-size: 15px;color:#1e1e1e;line-height: 1.6;}
+.social-media{display:flex;flex-wrap:wrap;justify-content:center;padding: 30px;}
+.intro-logo{position: absolute;top: 450px;right: 250px;}
