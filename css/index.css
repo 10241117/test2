@@ -13,6 +13,10 @@ img{
 .custom-nav-item, .logo {
     text-align : center;
 }
+.logo {
+    display:block;
+    margin:0 auto;
+}
 .custom-nav-item {
     padding: 3px 0px;
     width: 75px;
