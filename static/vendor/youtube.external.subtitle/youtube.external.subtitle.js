@@ -309,7 +309,7 @@
             y: iframe.offsetTop - iframe.scrollTop + iframe.clientTop,
             width: iframe.offsetWidth,
             height: height,
-            bottomPadding: height < 200 && !controlsVisible ? 20 : 60
+            bottomPadding:/* height < 200 && */!controlsVisible ? 20 : 60
         };
     };
     var renderSubtitle = function (element, player, isFullscreenActive, text, controlsVisible) {
