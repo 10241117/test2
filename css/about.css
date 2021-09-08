@@ -4,12 +4,6 @@
     text-decoration: none;
 }
 
-hr.style-one {
-    border: 0;
-    height: 2px;
-    background-color: #1e1e1e;
-}
-
 .icon {width: 50px; margin: 15px;}
 
 .intro-title{text-align: left;font-size: 26.25px;color:#1e1e1e;line-height: 1.6;padding: 50px 0px 0px 0px;}

@@ -30,7 +30,7 @@ img{
     font-weight:bold;
 }
 
-.custom-container {text-align: center; max-width: 1130px;  position: relative;}
+.custom-container {text-align: center; max-width: 1140px;  position: relative;}
 
 .select-btn>a {
     display: inline-block;
@@ -76,4 +76,10 @@ img{
     text-decoration: none;
     padding: 5px;
     z-index: 30;
+}
+
+hr.style-one {
+    border: 0;
+    height: 2px;
+    background-color: #1e1e1e;
 }
