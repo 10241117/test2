@@ -300,6 +300,9 @@
         return classes.join(' ');
     };
     var renderText = function (text) {
+        if (text === null) {
+            return '';
+        }
         var n = text.split(/\r\n|\r|\n/);
         var sub = '';
         for (var _i = 0; _i < n.length; _i++) {
@@ -326,7 +329,7 @@
             }
             sub += '<br><span style="color:' + color + ';">' + n[i] + '</span>';
         }
-        return (text === null ? '' : sub).replace('<br>', '');
+        return sub.replace('<br>', '');
         //return "<span>" + (text === null ? '' : text).replace(/(?:\r\n|\r|\n)/g, '</span><br /><span>') + "</span>";
     };
     var getFrameRect = function (iframe, controlsVisible) {
