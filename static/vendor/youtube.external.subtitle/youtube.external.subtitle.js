@@ -307,27 +307,27 @@
         var sub = '';
         for (var _i = 0; _i < n.length; _i++) {
             var color = 'white';
-            if (~n[i].indexOf('M:')) {
+            if (~n[_i].indexOf('M:')) {
                 color = '#C3552B';
-                n[i] = n[i].replace('M: ', '');
+                n[_i] = n[_i].replace('M: ', '');
             }
-            else if (~n[i].indexOf('V:')) {
+            else if (~n[_i].indexOf('V:')) {
                 color = '#960018';
-                n[i] = n[i].replace('V: ', '');
+                n[_i] = n[_i].replace('V: ', '');
             }
-            else if (~n[i].indexOf('I:')) {
+            else if (~n[_i].indexOf('I:')) {
                 color = '#348EC7';
-                n[i] = n[i].replace('I: ', '');
+                n[_i] = n[_i].replace('I: ', '');
             }
-            else if (~n[i].indexOf('L:')) {
+            else if (~n[_i].indexOf('L:')) {
                 color = '#D4AF37';
-                n[i] = n[i].replace('L: ', '');
+                n[_i] = n[_i].replace('L: ', '');
             }
-            else if (~n[i].indexOf('S:')) {
+            else if (~n[_i].indexOf('S:')) {
                 color = '#A660A7';
-                n[i] = n[i].replace('S: ', '');
+                n[_i] = n[_i].replace('S: ', '');
             }
-            sub += '<br><span style="color:' + color + ';">' + n[i] + '</span>';
+            sub += '<br><span style="color:' + color + ';">' + n[_i] + '</span>';
         }
         return sub.replace('<br>', '');
         //return "<span>" + (text === null ? '' : text).replace(/(?:\r\n|\r|\n)/g, '</span><br /><span>') + "</span>";
