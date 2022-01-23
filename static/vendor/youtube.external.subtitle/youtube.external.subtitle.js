@@ -307,23 +307,23 @@
         var sub = '';
         for (var _i = 0; _i < n.length; _i++) {
             var color = 'white';
-            if (~str.indexOf('M:')) {
+            if (~n[i].indexOf('M:')) {
                 color = '#C3552B';
                 n[i] = n[i].replace('M: ', '');
             }
-            else if (~str.indexOf('V:')) {
+            else if (~n[i].indexOf('V:')) {
                 color = '#960018';
                 n[i] = n[i].replace('V: ', '');
             }
-            else if (~str.indexOf('I:')) {
+            else if (~n[i].indexOf('I:')) {
                 color = '#348EC7';
                 n[i] = n[i].replace('I: ', '');
             }
-            else if (~str.indexOf('L:')) {
+            else if (~n[i].indexOf('L:')) {
                 color = '#D4AF37';
                 n[i] = n[i].replace('L: ', '');
             }
-            else if (~str.indexOf('S:')) {
+            else if (~n[i].indexOf('S:')) {
                 color = '#A660A7';
                 n[i] = n[i].replace('S: ', '');
             }
