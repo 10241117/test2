@@ -300,7 +300,34 @@
         return classes.join(' ');
     };
     var renderText = function (text) {
-        return "<span>" + (text === null ? '' : text).replace(/(?:\r\n|\r|\n)/g, '</span><br /><span>') + "</span>";
+        var n = text.split('\N');
+        var sub = '';
+        for (var _i = 0; _i < n.length; _i++) {
+            var color = 'white';
+            if (~str.indexOf('M:')) {
+                color = '#C3552B';
+                n[i] = n[i].replace('M: ', '');
+            }
+            else if (~str.indexOf('V:')) {
+                color = '#960018';
+                n[i] = n[i].replace('V: ', '');
+            }
+            else if (~str.indexOf('I:')) {
+                color = '#348EC7';
+                n[i] = n[i].replace('I: ', '');
+            }
+            else if (~str.indexOf('L:')) {
+                color = '#D4AF37';
+                n[i] = n[i].replace('L: ', '');
+            }
+            else if (~str.indexOf('S:')) {
+                color = '#A660A7';
+                n[i] = n[i].replace('S: ', '');
+            }
+            sub += '<br><span style="color:' + color + ';">' + n[i] + '</span>';
+        }
+        return (text === null ? '' : sub).replace('<br>', '');
+        //return "<span>" + (text === null ? '' : text).replace(/(?:\r\n|\r|\n)/g, '</span><br /><span>') + "</span>";
     };
     var getFrameRect = function (iframe, controlsVisible) {
         var height = iframe.offsetHeight;
