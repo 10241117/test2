@@ -300,7 +300,7 @@
         return classes.join(' ');
     };
     var renderText = function (text) {
-        var n = text.split('\N');
+        var n = text.split(/\r\n|\r|\n/);
         var sub = '';
         for (var _i = 0; _i < n.length; _i++) {
             var color = 'white';
